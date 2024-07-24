@@ -1,0 +1,197 @@
+ .permissions-table {
+  position: absolute;
+  top: 150px;
+  left: 160px;
+  max-width: 85%;
+  max-height:700px;
+  overflow: auto;
+  width: 1230px;
+  margin: auto; 
+}
+
+.permissions-table table {
+  border-collapse: collapse;
+  margin-left: 10px;
+}
+
+.permissions-table th,
+.permissions-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.permissions-table th {
+  background-color: rgb(178, 241, 178);
+  position: sticky;
+  top: 0; 
+  z-index: 2;
+}
+
+.approve-button {
+  background-color: #69b96c; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.approve-button:hover {
+  background-color: #45a049;
+}
+  
+.reject-button {
+  background-color: #2e7aeb; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.reject-button:hover {
+  background-color: #d32f2f;
+}
+
+.approve-button:disabled,
+.reject-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+} 
+
+
+
+
+
+
+/* 
+
+ .permissions-table {
+  position: absolute;
+  top: 200px;
+  left: 160px;
+  max-width: 100%;
+  width: 1230px;
+  margin: auto; 
+  height: 520px; 
+  overflow: hidden; 
+}
+
+.table-container {
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.permissions-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /
+}
+
+.permissions-table th,
+.permissions-table td {
+  padding:10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.permissions-table th {
+  background-color: rgb(178, 241, 178);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.permissions-table thead {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.permissions-table tbody {
+  display: block;
+  height: calc(520px - 40px); 
+  overflow-y: auto;
+}
+
+.permissions-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.approve-button {
+  background-color: #69b96c; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.approve-button:hover {
+  background-color: #45a049;
+}
+
+.reject-button {
+  background-color: #d32f2f; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.reject-button:hover {
+  background-color: #b22222;
+}
+
+.approve-button:disabled,
+.reject-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

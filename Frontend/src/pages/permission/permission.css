@@ -1,0 +1,113 @@
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.bord {
+  background-color: white;
+  padding: 40px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Increased width */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin */
+  font-size: 24px; /* Increased font size */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased margin */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Increased margin */
+  font-weight: bold;
+  font-size: 18px; /* Increased font size */
+}
+
+input[type="date"],
+textarea {
+  width: 100%; /* Ensure full width */
+  padding: 12px; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  font-size: 16px; /* Increased font size */
+}
+
+textarea {
+  resize: vertical;
+}
+
+.time-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-select-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Added gap for better spacing */
+}
+
+.time-select {
+  width: 100%;
+  padding: 8px; /* Added padding */
+  font-size: 16px; /* Increased font size */
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px; /* Increased padding */
+  border: none;
+  background-color: #03da6e;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px; /* Increased font size */
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+}
+
+.time-picker-container {
+  position: relative;
+}
+
+.time-picker {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.time-picker-container:hover .time-picker {
+  display: block;
+}
+
+.length {
+  padding-left: 480px;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
