@@ -164,7 +164,7 @@ function Usecase() {
     }
 
     try {
-      await axios.post("http://192.168.0.123:4023/usecase", formData);
+      await axios.post("http://192.168.0.166:3000/usecase", formData);
       toast.success("Usecase added");
 
       setFormData({

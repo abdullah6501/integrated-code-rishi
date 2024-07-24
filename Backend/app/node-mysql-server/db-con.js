@@ -2,10 +2,10 @@ const mysql = require("mysql2");
 
 const Connection = mysql.createConnection({
   // host: "192.168.0.135",
-  host: "localhost",
-  user: "root",
+  host: "192.168.0.166",
+  user: "rootuser",
   // password: "rishi@123",
-  password: "rishi123",
+  password: "root@123",
 
   // database: "attendance_app", // Corrected the database name here
   // database: "pulsedb", // Corrected the database name here

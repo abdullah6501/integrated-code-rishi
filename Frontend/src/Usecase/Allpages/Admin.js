@@ -29,7 +29,7 @@ const Admin = () => {
 
   const fetchData1 = async () => {
     try {
-      const response = await fetch("http://192.168.0.123:4023/project_info");
+      const response = await fetch("http://192.168.0.166:3000/project_info");
       const jsonData = await response.json();
       setData(jsonData);
       setActivationStates(Array(jsonData.length).fill(true));
@@ -40,7 +40,7 @@ const Admin = () => {
 
   const fetchData2 = async () => {
     try {
-      const response = await fetch("http://192.168.0.123:4023/project_info1");
+      const response = await fetch("http://192.168.0.166:3000/project_info1");
       const jsonData = await response.json();
       setTaskData(jsonData);
     } catch (error) {
@@ -51,7 +51,7 @@ const Admin = () => {
   const handleSoftDelete = async (Projectid, index) => {
     try {
       await axios.put(
-        `http://192.168.0.123:4023/api/project_info/delete/${Projectid}`
+        `http://192.168.0.166:3000/api/project_info/delete/${Projectid}`
       );
       const newActivationStates = [...activationStates];
       newActivationStates[index] = false;
@@ -64,7 +64,7 @@ const Admin = () => {
   const cancelSoftDelete = async (Projectid, index) => {
     try {
       await axios.put(
-        `http://192.168.0.123:4023/api/project_info/canceldelete/${Projectid}`
+        `http://192.168.0.166:3000/api/project_info/canceldelete/${Projectid}`
       );
       const newActivationStates = [...activationStates];
       newActivationStates[index] = true;
@@ -130,7 +130,7 @@ const Admin = () => {
   const searchProject = async () => {
     try {
       const response = await fetch(
-        `http://192.168.0.123:4023/project_info1/${projectTitle}`
+        `http://192.168.0.166:3000/project_info1/${projectTitle}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch");
@@ -427,7 +427,7 @@ export default Admin;
 
 //     const fetchData1 = async () => {
 //         try {
-//             const response = await fetch('http://192.168.0.123:4023/project_info');
+//             const response = await fetch('http://192.168.0.166:3000/project_info');
 //             const jsonData = await response.json();
 //             setData(jsonData);
 //             setActivationStates(Array(jsonData.length).fill(true));
@@ -438,7 +438,7 @@ export default Admin;
 
 //     const fetchData2 = async () => {
 //         try {
-//             const response = await fetch('http://192.168.0.123:4023/project_info1');
+//             const response = await fetch('http://192.168.0.166:3000/project_info1');
 //             const jsonData = await response.json();
 //             setTaskData(jsonData);
 //         } catch (error) {
@@ -448,7 +448,7 @@ export default Admin;
 
 //     const handleSoftDelete = async (Projectid, index) => {
 //         try {
-//             await axios.put(`http://192.168.0.123:4023/api/project_info/delete/${Projectid}`);
+//             await axios.put(`http://192.168.0.166:3000/api/project_info/delete/${Projectid}`);
 //             const newActivationStates = [...activationStates];
 //             newActivationStates[index] = false;
 //             setActivationStates(newActivationStates);
@@ -459,7 +459,7 @@ export default Admin;
 
 //     const cancelSoftDelete = async (Projectid, index) => {
 //         try {
-//             await axios.put(`http://192.168.0.123:4023/api/project_info/canceldelete/${Projectid}`);
+//             await axios.put(`http://192.168.0.166:3000/api/project_info/canceldelete/${Projectid}`);
 //             const newActivationStates = [...activationStates];
 //             newActivationStates[index] = true;
 //             setActivationStates(newActivationStates);
@@ -509,7 +509,7 @@ export default Admin;
 
 //     const searchProject = async () => {
 //         try {
-//             const response = await fetch(`http://192.168.0.123:4023/project_info1/title/${projectTitle}`);
+//             const response = await fetch(`http://192.168.0.166:3000/project_info1/title/${projectTitle}`);
 //             if (!response.ok) {
 //                 throw new Error("Failed to fetch");
 //             }

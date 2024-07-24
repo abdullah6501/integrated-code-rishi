@@ -39,7 +39,7 @@ export const Loginpage = () => {
 
   const sendAuditInfo = async (data) => {
     try {
-      const response = await axios.post("http://192.168.0.123:4023/user/audit", {
+      const response = await axios.post("http://192.168.0.166:3000/user/audit", {
         User_id: data.Email, // Assuming Email is the user ID
         Activity_type: "login", // Ensure this matches the valid types in the backend
         App_data: "login", // You can specify additional data here if needed

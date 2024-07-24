@@ -13,7 +13,7 @@ const UserDataSearch = () => {
 
   const fetchUserData = () => {
     axios
-      .get("http://192.168.0.123:4023/alldatas")
+      .get("http://192.168.0.166:3000/alldatas")
       .then((response) => {
         setUserData(response.data);
       })

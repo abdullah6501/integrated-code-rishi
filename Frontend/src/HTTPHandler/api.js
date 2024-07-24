@@ -232,7 +232,7 @@ export const getPermissionsAdmin = async () => {
 
 export const getPermissions = async (userEmail) => {
   try {
-    const response = await axios.get(`http://192.168.0.123:4023/permissions/${userEmail}`);
+    const response = await axios.get(`http://192.168.0.166:3000/permissions/${userEmail}`);
     return response.data;
   } catch (error) {
     console.error(error);
